@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Management</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #2196F3;
+            color: white;
+            padding: 20px;
+            font-size: 24px;
+        }
+        nav {
+            background: #0D47A1;
+            padding: 10px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+        }
+        th {
+            background: #1976D2;
+            color: white;
+        }
+        button {
+            background: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 12px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        button:hover {
+            background: #388E3C;
+        }
+        footer {
+            background: #2196F3;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function updateItem() {
+            alert("Update functionality will be implemented soon!");
+        }
+        function deleteItem() {
+            alert("Item deleted successfully!");
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1> Handoo Pharmacy Management System</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#inventory">Inventory</a></li>
+            <li><a href="#expiry">Expiry Tracker</a></li>
+            <li><a href="#alerts">Stock Alerts</a></li>
+        </ul>
+    </nav>
+    
+    <section id="inventory">
+        <h2>Inventory Management</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Drug Name</th>
+                    <th>Quantity (strips)</th>
+                    <th>Expiry Date</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Dolo 650</td>
+                    <td>50</td>
+                    <td>2025-06-15</td>
+                    <td><button onclick="updateItem()">Update</button> <button onclick="deleteItem()">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Equirex</td>
+                    <td>30</td>
+                    <td>2024-12-10</td>
+                    <td><button onclick="updateItem()">Update</button> <button onclick="deleteItem()">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Ultracet</td>
+                    <td>40</td>
+                    <td>2025-06-24</td>
+                    <td><button onclick="updateItem()">Update</button> <button onclick="deleteItem()">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Petril 0.25 MD</td>
+                    <td>2</td>
+                    <td>2025-02-15</td>
+                    <td><button onclick="updateItem()">Update</button> <button onclick="deleteItem()">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Ibnis</td>
+                    <td>10</td>
+                    <td>2025-06-24</td>
+                    <td><button onclick="updateItem()">Update</button> <button onclick="deleteItem()">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Pantop DSR</td>
+                    <td>40</td>
+                    <td>2025-06-24</td>
+                    <td><button onclick="updateItem()">Update</button> <button onclick="deleteItem()">Delete</button></td>
+                </tr>
+                <tr>
+                    <td>Monocef O CV 200</td>
+                    <td>40</td>
+                    <td>2025-06-24</td>
+                    <td><button onclick="updateItem()">Update</button> <button onclick="deleteItem()">Delete</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    
+    <section id="expiry">
+        <h2>Expiry Reminder</h2>
+        <p>Drugs nearing expiry:</p>
+        <ul>
+            <li>Ibuprofen - Expiring on 2024-12-10</li>
+        </ul>
+    </section>
+    
+    <section id="alerts">
+        <h2>Low Stock Alerts</h2>
+        <p>Drugs running low on stock:</p>
+        <ul>
+            <li>Ibuprofen - Only 30 left</li>
+        </ul>
+    </section>
+    
+    <footer>
+        <p>&copy; Handoo Pharmacy Management System</p>
+    </footer>
+</body>
+</html>
