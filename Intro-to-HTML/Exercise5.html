@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercise 5</title>
+    <title>CSS grid</title>
     <style>
         p
         {
@@ -56,9 +56,9 @@
         .name
         {
             font-weight: bold;
-            margin-top: 10px;
-            margin-bottom: 4px;
-            font-size: 17px ;
+            padding-left: 5px;
+            margin-top: 6px;
+            margin-bottom: 0;
         }
         .category
         {
@@ -70,6 +70,57 @@
             color: rgb(96,96,96);
             margin-bottom: 5px;
         }
+
+        .profile{
+            display: inline-block;
+          }
+          .img-one{
+            
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            object-position: top;
+          }
+          
+          .mut-friend{
+            width:30px;
+            height: 30px;
+            border-radius: 15px;
+            margin-left: 5px;
+          }
+          .para
+          {
+            width: 100%;
+            margin-top: 5px;
+            color: rgb(96,96,96);
+            font-size: 14px;
+            margin-left: 5px;
+            padding-top: 2px;
+          }
+          .maindiv
+          {
+          display: grid;
+          grid-template-columns: 150px 150px 150px;
+          margin-top: 30px;
+          column-gap: 25px;
+          margin-left: 10px;
+          }
+          .mutual
+          {
+            display: grid;
+            grid-template-columns: 32px 1fr;
+            margin-top: 5px;
+            
+          }
+          .add{
+            background-color: rgb(57,117,234);
+            color: aliceblue;
+            margin-left: 5px;
+            border:none;
+            margin-top: 12px;
+            margin-bottom: 10px;
+            padding:5px 7px;
+          }
     </style>
 </head>
 <body>
@@ -86,6 +137,72 @@
             <button class="follow">Follow</button>
         </div>        
     </div>
-    
+
+
+
+    <div class="maindiv">
+        <div style="box-shadow: 0px 0px 8px grey;">
+  <div class="profile">
+        <img class="img-one" src="../Thumbnails/Cat.webp">
+  </div>
+  <div>
+        <p class="name">Leena</p>
+  </div>
+  <div class="mutual">
+      <div>
+        <img class="mut-friend" src="../Thumbnails/Cat2">
+      </div>
+      <div>
+        <p class="para">2 mutual friends</p>
+      </div>
+  </div>
+  <div>
+        <button class="add">Add Friend</button>
+  </div>
+
+</div>
+<div style="
+box-shadow: 0px 0px 8px grey;">
+
+<div class="profile">
+<img class="img-one" src="../Thumbnails/Baby.jpg">
+</div>
+<div>
+<p class="name">Lisa</p>
+</div>
+<div class="mutual">
+<div>
+<img class="mut-friend" src="../Thumbnails/Baby2.jpg">
+</div>
+<div>
+<p class="para">2 mutual friends</p>
+</div>
+</div>
+<div>
+<button class="add">Add Friend</button>
+</div>
+</div>
+<div style="box-shadow: 0px 0px 8px grey;"> 
+
+<div class="profile">
+<img class="img-one" src="../Thumbnails/Mustang.jpg">
+</div>
+<div>
+<p class="name">Bad Boy</p>
+</div>
+<div class="mutual">
+<div>
+<img class="mut-friend" src="../Thumbnails/worldwide.webp">
+</div>
+<div>
+<p class="para">2 mutual friends</p>
+</div>
+</div>
+<div>
+<button class="add">Add Friend</button>
+</div>
+</div>
+
+</div>
 </body>
 </html>
