@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+        *
+        {
+            font-family: arial;
+        
+        }
+        .main
+        {
+            margin-top: 50px;
+            border: 1px rgb(96,96,96) solid;
+            width: 300px;
+            border-radius: 5px;
+        }
+        .common
+        {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 7px;
+            padding-bottom: 7px;
+        }
+        .notify
+        {
+           background-color: rgb(65,108,235);
+           color:white;
+           padding-left: 10px;
+           padding-right: 10px;
+           padding-bottom: 3px;
+           padding-top: 3px;
+           border-radius: 15px;
+           
+        }
+        .search
+        {
+            border-radius:40px;
+            border: none;
+            padding: 8px;
+            width: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div style="
+        display: flex;
+        flex-direction: row;
+        border-width: 1px;
+        border-style: solid;
+        height: 70px;
+        justify-content: space-between;
+        align-items: center;
+        ">
+        <div style=
+        "background-color: lightpink;
+        width: 100px;
+        
+        ">div1</div>
+        <div style="
+        background-color: lightblue;
+        width: 100px;
+        ">div2</div>
+        <div style="
+        background-color: lightgreen;
+        width: 100px;
+        ">div3</div>
+    </div>
+
+    <div style="
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+    ">
+        <div style="
+            background-color: lightblue;
+            width: 50px;
+        ">div1</div>
+        <div style="
+            background-color: lightpink;
+            flex:1;
+        ">div2</div>
+        <div style="
+            background-color: lightblue;
+            width: 75px;
+        ">div3</div>
+    </div>
+
+    <div style="
+        margin-top: 15px;
+        display: flex;
+        flex-direction: row;
+        border-width: 1px;
+        border-style: solid;
+        border-color: gray;
+        height: 50px;
+        justify-content: space-between;
+        align-items: center;
+        ">
+        <div style="
+            background-color: lightblue;
+            width: 50px;
+        ">div1</div>
+        <div style="
+            background-color: lightblue;
+            width: 75px;
+        ">div3</div>
+    </div>
+
+    <div class="main">
+        <div class="common">
+            <div style="
+                font-size: 15px;">Home</div>
+            <div class="notify">14</div>
+        </div>
+
+        <div class="common">
+            <div style="
+                font-size: 15px;">Notifications</div>
+            <div class="notify">3</div>
+        </div>
+        <div class="common">
+            <div style="
+                font-size: 15px;">Messages</div>
+            <div class="notify">5</div>
+        </div>
+    </div>
+
+    <div style="
+            display: flex;
+            flex-direction: row;
+            background-color: rgb(97,71,147);
+            justify-content: space-between;
+            align-items: center;
+            padding:10px;
+            margin-top: 60px;
+            font-size: 15px;
+        ">
+        <div style="
+            color: white;">Home
+        </div>
+        <div>
+            <input class="search" type="text" placeholder="Search">
+        </div>
+        <div style="
+            color: white;
+            border-style: solid;
+            border-width: 1px;
+            padding: 5px 12px;
+        ">Download</div>
+    </div>
+</body>
+</html>
