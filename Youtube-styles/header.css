@@ -23,7 +23,6 @@
 }
 .middlesection 
 {
-    background-color: lightpink;
     flex:1;
     margin-left: 70px;
     margin-right: 35px;
@@ -31,26 +30,86 @@
     display: flex;
     align-items: center;
 }
-.searchbutton
-{
-    height: 40px;
-    width: 60px;
-    font-size: 34px;
-}
 .search
 { 
     flex:1;
-    height: 34px;
+    font-family: Roboto, arial;
+    height: 36px;
+    font-size: 16px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(192,192,192);
+    padding-left: 12px;
+    border-radius: 2px;
+    box-shadow:inset 1px 2px 3px(0,0,0,0.05);
+    width: 0;
+}
+.search::placeholder
+{
+    font-size: 16px;
+    font-family: Roboto, arial;
+}
+.searchbutton
+{
+    height: 40px;
+    width: 66px;
+    background-color: rgb(247,247,247);
+    border-color: rgb(192,192,192);
+    border-style: solid;
+    border-width: 1px;
+    margin-left: -1px;
+    margin-right: 10px;
+}
+.searchicon
+{
+    height: 25px;
+    margin-top:4px;
+
 }
 .voicebutton
 {
     height: 40px;
     width: 40px;
+    background-color: rgb(248,248,248);
+    border:none;
+    border-radius: 25px;
+}
+.voiceicon
+{
+    height: 24px;
+    margin-top: 4px;
 }
 .rightsection
 {
-    background-color: lightblue;
-    width: 200px;
+   
+    width: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 26px;
+    flex-shrink: 0;
 }
 
+.uploadicon
+{
+    height: 24px;
+}
+.appsicon
+{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+.notificationicon
+{
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+}
+.currentuserpicture
+{
+    height: 32px;
+    border-radius: 16px;
+    cursor: pointer;
+}
  
