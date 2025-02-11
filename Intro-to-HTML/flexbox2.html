@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Flexbox 2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
+  <style>
+    *
+    {
+        font-family: Roboto,arial;
+    }
+    .container
+    {   
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-right: 15px;
+        padding-left: 15px;
+        width: 400px;
+        
+        box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 4px;
+    }
+    .inboxmsg
+    {
+        font-size: 14px;
+        margin-bottom: 20px;
+        color: rgb(96,96,96);
+    }
+    .email
+    {
+        
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-bottom: 20px;
+        
+        
+    }
+    .senderpicturecontainer
+    {
+        margin-right: 10px;
+    }
+    .senderpicture{
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        object-fit: cover;
+    }
+    .emailcontent
+    {
+       flex: 1;
+    }
+    .emailheader
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3px;
+        
+    }
+    .sendername
+    {
+        font-weight: bold;
+        font-size:18px;        
+    }
+    .sendtime
+    {
+        color: rgb(96,96,96);
+        font-size: 14px;
+    }
+    .subject
+    {
+        font-weight: bold;
+        margin-bottom: 5px;
+        
+    }
+    .message
+    {
+        color: rgb(96,96,96);
+        
+    }
+  </style>
+</head>
+<body>
+    <div class="container">
+        <div class="inboxmsg">ALL INBOXES</div>
+        <div class="email">
+            <div class="senderpicturecontainer">
+                <img class="senderpicture" src="../Thumbnails/Cat.webp">
+            </div>
+            <div class="emailcontent">
+                <div class="emailheader">
+                    <div class="sendername">Chewy Promotions</div>
+                    <div class="sendtime">4:58 PM</div>
+                </div>
+                <div class="subject">Biggest sales of the year!</div>
+                <div class="message">Hey there! We're writing to tell you about our...</div>
+            </div>
+        </div>
+
+        <div class="email">
+            <div class="senderpicturecontainer">
+                <img class="senderpicture" src="../Thumbnails/Baby.jpg">
+            </div>
+            <div class="emailcontent">
+                <div class="emailheader">
+                    <div class="sendername">Best Buy</div>
+                    <div class="sendtime">12:32 PM</div>
+                </div>
+                <div class="subject">Your Best Buy eReceipt</div>
+                <div class="message">Thank you for shopping at Best Buy, here is...</div>
+            </div>
+        </div>
+
+        <div class="email">
+            <div class="senderpicturecontainer">
+                <img class="senderpicture" src="../Thumbnails/Mustang.jpg">
+            </div>
+            <div class="emailcontent">
+                <div class="emailheader">
+                    <div class="sendername">Netflix</div>
+                    <div class="sendtime">9:00 AM</div>
+                </div>
+                <div class="subject">Here's what's coming soon to Netflix</div>
+                <div class="message">Brand new movies and shows, old favorites...</div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
