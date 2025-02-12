@@ -5,7 +5,8 @@
         }
         .thumbrow
         {
-            margin-bottom: 12px; 
+            margin-bottom: 12px;
+            position: relative; 
         }
         .videotitle
         {            
@@ -49,4 +50,21 @@
             grid-template-columns: 1fr 1fr 1fr;
             row-gap: 40px;
             column-gap: 16px;
+        }
+        .videotime
+        {
+            font-family: Roboto, Arial;
+            background-color: black;
+            color: white;
+            border-radius: 2px;
+            opacity: 0.9;
+            font-size: 12px;
+            font-weight: 500;
+            padding-left: 4px;
+            padding-right: 4px;
+            padding-bottom: 4px;
+            padding-top: 4px;
+            position:absolute;
+            bottom: 8px;
+            right: 5px;
         }
