@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Position Practice</title>
+    <style>
+        .crossbutton
+        {
+            font-family: Arial;
+            font-size: 16px;
+            background-color: rgb(96,96,96);
+            color: white;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-right: 12px;
+            padding-left: 12px;
+            border-radius: 25px;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+        .bottom
+        {
+            position: fixed;
+            background-color: gray;
+            width: 150px;
+            height: 80px;
+            bottom: 10px;
+            right: 10px;
+        }
+        .div1
+        {
+            background-color: gray;
+            width: 320px;
+            height: 180px;
+            margin-left: 40px;
+            margin-top: 40px;
+            position: relative;
+        }
+        .cross
+        {
+            font-family: Arial;
+            font-size: 16px;
+            background-color: black;
+            color: white;
+            border: none;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            padding-right: 10px;
+            padding-left: 10px;
+            border-radius: 35px;
+            position: absolute;
+            left: -10px;
+            top: -10px;
+        }
+        .videotime
+        {
+            background-color: black;
+            color: white;
+            position: absolute;
+            bottom: 8px;
+            right: 8px;
+
+        }
+        .sale
+        {
+            margin-top: 30px;
+            margin-left: 20px;
+            position: relative;
+            width: 275px;
+            
+            
+        }
+        .offer
+        {
+            font-family: Arial;
+            font-size: 14px;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            position: absolute;
+            background-color: black;
+            color: white;
+            top: 10px;
+            right: 0;
+            opacity: 0.8;            
+        }
+        .cart
+        {
+            position: absolute;
+            bottom: 10px;
+            left: 90px;
+            background-color: rgb(219, 219, 219);
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            opacity: 0.8;
+            border-style: solid;
+            border-width: 1px;
+            cursor: pointer;
+        }
+
+    </style>
+</head>
+<body style="height: 3000px;">
+    <div>
+        <button class="crossbutton">X</button>
+    </div>
+    <div class="bottom"></div>
+    <div class="div1">
+        <button class="cross">X</button>
+        <div class="videotime">12:13</div>
+    </div>
+    
+    <div class="sale">
+        <div>
+            <img style="height: 200px;" src="../Channel Pictures/Clothing.jpeg">
+        </div>
+            <div class="offer">20% OFF</div>
+
+            <div style="background-color: white;
+            width: 310px;
+            opacity: 0.8;
+            height: 50px;
+            position: absolute;
+            bottom: 0px;
+            ">
+                
+            </div><div class="cart">Add to Cart</div>
+    </div>
+
+</body>
+</html>
