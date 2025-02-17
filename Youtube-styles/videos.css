@@ -71,12 +71,7 @@
                 grid-template-columns: 1fr 1fr 1fr;
             }
         }
-        {
-            .allvideos-grid
-            {
-                grid-template-columns: 1fr;
-            }
-        }
+        
         @media (min-width: 1000px)
         {
             .allvideos-grid
